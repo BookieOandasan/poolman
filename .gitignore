@@ -32,3 +32,8 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+/BackEnd/WebApi/.vs/PoolmanWebapi/v15/Server/sqlite3/db.lock
+/BackEnd/WebApi/.vs/PoolmanWebapi/v15/Server/sqlite3
+/BackEnd/WebApi/Poolman.Repository/obj/Poolman.Repository.csproj.nuget.cache
+/BackEnd/WebApi/Poolman.Repository.UnitTests/obj/Poolman.Repository.UnitTests.csproj.nuget.cache
+*.cache
