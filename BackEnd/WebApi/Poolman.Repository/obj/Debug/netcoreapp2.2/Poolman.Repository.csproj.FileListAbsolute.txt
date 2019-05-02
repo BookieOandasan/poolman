@@ -18,3 +18,4 @@ C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Reposito
 C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.AssemblyInfo.cs
 C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.dll
 C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.pdb
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.csprojAssemblyReference.cache

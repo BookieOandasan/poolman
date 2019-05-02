@@ -12,6 +12,10 @@ namespace Poolman.Repository
     [Key]
     public string Id { get; set; }
     public string summary { get; set; }
-    
+    public string type { get; set; }
+    public DateTime publishdate { get; set; }
+    public string title { get; set; }
+    public string link { get; set; }
+
   }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Tests
 {
-  public class Tests
+  public class DailyReadingUnitTests
   {
     [SetUp]
     public void Setup()
@@ -12,7 +12,7 @@ namespace Tests
     }
 
     [Test]
-    public void Test1()
+    public void GetRssFeeds()
     {
 
       var dbContext = new CatholicFeedDataContext();
