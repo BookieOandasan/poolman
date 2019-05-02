@@ -13064,11 +13064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bookie\\Source\\repos\\Poolman\\WebApi\\PoolmanWebapi\\PoolmanWebapi.csproj",
+      "projectUniqueName": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\PoolmanWebapi\\PoolmanWebapi.csproj",
       "projectName": "PoolmanWebapi",
-      "projectPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman\\WebApi\\PoolmanWebapi\\PoolmanWebapi.csproj",
+      "projectPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\PoolmanWebapi\\PoolmanWebapi.csproj",
       "packagesPath": "C:\\Users\\Bookie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman\\WebApi\\PoolmanWebapi\\obj\\",
+      "outputPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\PoolmanWebapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",
@@ -13090,8 +13090,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Bookie\\Source\\repos\\Poolman\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj": {
-              "projectPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj"
+            "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj": {
+              "projectPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj"
             }
           }
         }

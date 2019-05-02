@@ -8,3 +8,13 @@ C:\Users\Bookie\Source\repos\Poolman\WebApi\Poolman.Repository\obj\Debug\netcore
 C:\Users\Bookie\Source\repos\Poolman\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.AssemblyInfo.cs
 C:\Users\Bookie\Source\repos\Poolman\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.dll
 C:\Users\Bookie\Source\repos\Poolman\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.pdb
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\bin\Debug\netcoreapp2.2\Poolman.Repository.deps.json
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\bin\Debug\netcoreapp2.2\Poolman.Repository.runtimeconfig.json
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\bin\Debug\netcoreapp2.2\Poolman.Repository.runtimeconfig.dev.json
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\bin\Debug\netcoreapp2.2\Poolman.Repository.dll
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\bin\Debug\netcoreapp2.2\Poolman.Repository.pdb
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.AssemblyInfoInputs.cache
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.AssemblyInfo.cs
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.dll
+C:\Users\Bookie\Source\repos\Poolman_app\poolman\BackEnd\WebApi\Poolman.Repository\obj\Debug\netcoreapp2.2\Poolman.Repository.pdb

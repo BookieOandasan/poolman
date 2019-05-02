@@ -6946,8 +6946,8 @@
     },
     "Poolman.Repository/1.0.0": {
       "type": "project",
-      "path": "../WebApi/Poolman.Repository/Poolman.Repository.csproj",
-      "msbuildProject": "../WebApi/Poolman.Repository/Poolman.Repository.csproj"
+      "path": "../Poolman.Repository/Poolman.Repository.csproj",
+      "msbuildProject": "../Poolman.Repository/Poolman.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6967,11 +6967,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bookie\\Source\\repos\\Poolman\\Poolman.Repository.UnitTests\\Poolman.Repository.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository.UnitTests\\Poolman.Repository.UnitTests.csproj",
       "projectName": "Poolman.Repository.UnitTests",
-      "projectPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman\\Poolman.Repository.UnitTests\\Poolman.Repository.UnitTests.csproj",
+      "projectPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository.UnitTests\\Poolman.Repository.UnitTests.csproj",
       "packagesPath": "C:\\Users\\Bookie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman\\Poolman.Repository.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",
@@ -6993,8 +6993,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Bookie\\Source\\repos\\Poolman\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj": {
-              "projectPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj"
+            "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj": {
+              "projectPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj"
             }
           }
         }

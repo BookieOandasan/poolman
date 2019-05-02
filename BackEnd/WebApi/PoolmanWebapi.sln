@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoolmanWebapi", "PoolmanWebapi\PoolmanWebapi.csproj", "{0FF12AD6-9192-44C6-953E-80F09B6381E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoolmanWebapi", "PoolmanWebapi\PoolmanWebapi.csproj", "{0FF12AD6-9192-44C6-953E-80F09B6381E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poolman.Repository", "Poolman.Repository\Poolman.Repository.csproj", "{D9CC9D0D-A2FB-4F56-8596-14E441D057BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poolman.Repository", "Poolman.Repository\Poolman.Repository.csproj", "{D9CC9D0D-A2FB-4F56-8596-14E441D057BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poolman.Repository.UnitTests", "..\Poolman.Repository.UnitTests\Poolman.Repository.UnitTests.csproj", "{D3A7B9DE-1D31-4E98-AD24-57322573B17B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poolman.Repository.UnitTests", "Poolman.Repository.UnitTests\Poolman.Repository.UnitTests.csproj", "{39D13512-C1BC-4314-B645-C561C499D4BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{D9CC9D0D-A2FB-4F56-8596-14E441D057BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9CC9D0D-A2FB-4F56-8596-14E441D057BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9CC9D0D-A2FB-4F56-8596-14E441D057BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3A7B9DE-1D31-4E98-AD24-57322573B17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3A7B9DE-1D31-4E98-AD24-57322573B17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3A7B9DE-1D31-4E98-AD24-57322573B17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3A7B9DE-1D31-4E98-AD24-57322573B17B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D13512-C1BC-4314-B645-C561C499D4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D13512-C1BC-4314-B645-C561C499D4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D13512-C1BC-4314-B645-C561C499D4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D13512-C1BC-4314-B645-C561C499D4BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
