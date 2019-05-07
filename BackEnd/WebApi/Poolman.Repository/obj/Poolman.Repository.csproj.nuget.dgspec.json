@@ -1,34 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj": {}
+    "E:\\dev\\poolman\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj": {
+    "E:\\dev\\poolman\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj",
+        "projectUniqueName": "E:\\dev\\poolman\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj",
         "projectName": "Poolman.Repository",
-        "projectPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj",
-        "packagesPath": "C:\\Users\\Bookie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bookie\\Source\\repos\\Poolman_app\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\obj\\",
+        "projectPath": "E:\\dev\\poolman\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\Poolman.Repository.csproj",
+        "packagesPath": "C:\\Users\\Booki\\.nuget\\packages\\",
+        "outputPath": "E:\\dev\\poolman\\poolman\\BackEnd\\WebApi\\Poolman.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bookie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Booki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\Bookie\\.dotnet\\NuGetFallbackFolder": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
