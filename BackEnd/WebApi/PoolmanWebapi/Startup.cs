@@ -30,21 +30,23 @@ namespace PoolmanWebapi
             //    .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
             services.AddOData();
 
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.WithOrigins("https://localhost:8100")); 
-            });
+            services.AddCors();
             services.AddODataQueryFilter();
             services.AddDbContext<CatholicFeedDataContext>();
-            
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            
-                app.UseCors(options => options.WithOrigins("https://localhost:8100"));
+            app.UseCors(options => options
+                               .AllowAnyHeader()
+                               .AllowAnyMethod()
+                               .AllowAnyOrigin()
+                               .AllowCredentials()
+
+                               );
 
             if (env.IsDevelopment())
             {
@@ -75,9 +77,9 @@ namespace PoolmanWebapi
             builder.EntityType<RssFeedDto>().Filter("id");
 
             //builder.EntitySet<RssFeedDto>("DailyReading").EntityType.Filter(QueryOptionSetting.Allowed);
-            var searchFunction = builder.Function("getRssFeedsCurrentDate");
-            searchFunction.Parameter<string>("searchText");
-            searchFunction.ReturnsCollectionFromEntitySet<RssFeedDto>("RssFeedsCurrentDate");
+            //var searchFunction = builder.Function("getRssFeedsCurrentDate");
+            //searchFunction.Parameter<string>("searchText");
+            //searchFunction.ReturnsCollectionFromEntitySet<RssFeedDto>("RssFeedsCurrentDate");
 
             return builder.GetEdmModel();
         }
