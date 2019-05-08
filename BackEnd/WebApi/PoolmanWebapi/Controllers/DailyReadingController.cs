@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,8 +10,9 @@ using Poolman.Repository;
 
 namespace PoolmanWebapi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("odata/[controller]")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class DailyReadingController : ControllerBase
     {
         private readonly CatholicFeedDataContext _context;
@@ -22,6 +24,7 @@ namespace PoolmanWebapi.Controllers
 
         // GET: api/DailyReading
         [HttpGet]
+        //[EnableCors("AllowOrigin")]
         public async Task<ActionResult<IEnumerable<RssFeedDto>>> GetRssFeeds()
         {
             return await _context.RssFeeds.ToListAsync();
@@ -29,6 +32,7 @@ namespace PoolmanWebapi.Controllers
 
         // GET: api/DailyReading/5
         [HttpGet("{id}")]
+        [EnableCors("AllowOrigin")]
         public async Task<ActionResult<RssFeedDto>> GetRssFeedDto(string id)
         {
             var rssFeedDto = await _context.RssFeeds.FindAsync(id);
@@ -69,6 +73,13 @@ namespace PoolmanWebapi.Controllers
             }
 
             return NoContent();
+        }
+
+        [HttpGet("type")]
+        [Route("odata/[controller]/RssFeedsCurrentDate{type}")]
+        public IQueryable<RssFeedDto> getRssFeedsCurrentDate([FromBody]string type)
+        {
+            return _context.GetRssFeedByCurrentDate(type).AsQueryable();
         }
 
         // POST: api/DailyReading
