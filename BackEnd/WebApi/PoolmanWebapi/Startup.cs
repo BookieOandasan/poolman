@@ -30,7 +30,14 @@ namespace PoolmanWebapi
             //    .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
             services.AddOData();
 
-            services.AddCors();
+            
+            services.AddCors(o => o.AddPolicy("AllowOrigin", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
+
             services.AddODataQueryFilter();
             services.AddDbContext<CatholicFeedDataContext>();
 
@@ -74,7 +81,7 @@ namespace PoolmanWebapi
             builder.EnableLowerCamelCase();
 
             builder.EntitySet<RssFeedDto>("DailyReading").EntityType.Filter(QueryOptionSetting.Allowed);
-            builder.EntityType<RssFeedDto>().Filter("id");
+            builder.EntityType<RssFeedDto>().Filter("type");
 
             //builder.EntitySet<RssFeedDto>("DailyReading").EntityType.Filter(QueryOptionSetting.Allowed);
             //var searchFunction = builder.Function("getRssFeedsCurrentDate");

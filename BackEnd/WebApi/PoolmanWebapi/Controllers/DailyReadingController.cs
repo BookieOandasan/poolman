@@ -33,19 +33,19 @@ namespace PoolmanWebapi.Controllers
         }
 
         // GET: api/DailyReading/5
-        [HttpGet("{id}")]
-        [EnableCors("AllowOrigin")]
-        public async Task<ActionResult<RssFeedDto>> GetRssFeedDto(string id)
-        {
-            var rssFeedDto = await _context.RssFeeds.FindAsync(id);
+        //[HttpGet("{id}")]
+        //[EnableCors("AllowOrigin")]
+        //public async Task<ActionResult<RssFeedDto>> GetRssFeedDto(string id)
+        //{
+        //    var rssFeedDto = await _context.RssFeeds.FindAsync(id);
 
-            if (rssFeedDto == null)
-            {
-                return NotFound();
-            }
+        //    if (rssFeedDto == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return rssFeedDto;
-        }
+        //    return rssFeedDto;
+        //}
 
         // PUT: api/DailyReading/5
         [HttpPut("{id}")]
@@ -78,7 +78,7 @@ namespace PoolmanWebapi.Controllers
         }
 
         [HttpGet("type")]
-        //[Route("odata/[controller]/RssFeedsCurrentDate{type}")]
+        [Route("odata/[controller]/DailyReadingController{type}")]
         //http://localhost:44392/odata/DailyReading/dailyReading
         public IQueryable<RssFeedDto> getRssFeedsCurrentDate([FromODataUri]string type)
         {
