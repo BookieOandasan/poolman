@@ -37,3 +37,4 @@ UserInterfaceState.xcuserstate
 /BackEnd/WebApi/Poolman.Repository/obj/Poolman.Repository.csproj.nuget.cache
 /BackEnd/WebApi/Poolman.Repository.UnitTests/obj/Poolman.Repository.UnitTests.csproj.nuget.cache
 *.cache
+/BackEnd/WebApi/Poolman.DatabaseProject/Poolman.DatabaseProject.jfm
