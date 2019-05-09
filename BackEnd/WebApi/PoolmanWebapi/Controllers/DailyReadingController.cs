@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -82,7 +83,7 @@ namespace PoolmanWebapi.Controllers
         public IQueryable<RssFeedDto> getRssFeedsCurrentDate([FromODataUri]string type)
         {
             //return _context.GetRssFeedByCurrentDate(type).AsQueryable();
-            return _context.RssFeeds.where(r => r.publishdate == Datetime.Now & r.type==type);
+            return _context.RssFeeds.Where(r => r.publishdate == DateTime.Now & r.type==type);
         }
 
         // POST: api/DailyReading
