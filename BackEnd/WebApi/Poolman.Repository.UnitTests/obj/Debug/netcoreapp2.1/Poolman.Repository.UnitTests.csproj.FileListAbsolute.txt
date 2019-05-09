@@ -1,0 +1,17 @@
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.deps.json
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.runtimeconfig.json
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.runtimeconfig.dev.json
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.dll
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.pdb
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\Poolman.Repository.dll
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\bin\Debug\netcoreapp2.1\Poolman.Repository.pdb
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\obj\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.csprojAssemblyReference.cache
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\obj\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\obj\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.AssemblyInfoInputs.cache
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\obj\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.AssemblyInfo.cs
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\obj\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.csproj.CopyComplete
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\obj\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.dll
+C:\Users\nemesio.oandasan\Source\Repos\poolman\poolman\BackEnd\WebApi\Poolman.Repository.UnitTests\obj\Debug\netcoreapp2.1\Poolman.Repository.UnitTests.pdb

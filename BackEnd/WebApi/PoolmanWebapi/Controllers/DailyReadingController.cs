@@ -10,6 +10,7 @@ using Poolman.Repository;
 
 namespace PoolmanWebapi.Controllers
 {
+    [Produces("application/json")]
     [Route("odata/[controller]")]
     [ApiController]
     [EnableCors("AllowOrigin")]
@@ -76,10 +77,12 @@ namespace PoolmanWebapi.Controllers
         }
 
         [HttpGet("type")]
-        [Route("odata/[controller]/RssFeedsCurrentDate{type}")]
-        public IQueryable<RssFeedDto> getRssFeedsCurrentDate([FromBody]string type)
+        //[Route("odata/[controller]/RssFeedsCurrentDate{type}")]
+        //http://localhost:44392/odata/DailyReading/dailyReading
+        public IQueryable<RssFeedDto> getRssFeedsCurrentDate([FromODataUri]string type)
         {
-            return _context.GetRssFeedByCurrentDate(type).AsQueryable();
+            //return _context.GetRssFeedByCurrentDate(type).AsQueryable();
+            return _context.RssFeeds.where(r => r.publishdate == Datetime.Now & r.type==type);
         }
 
         // POST: api/DailyReading
