@@ -30,6 +30,7 @@ namespace PoolmanWebapi.Controllers
         public async Task<ActionResult<IEnumerable<RssFeedDto>>> GetRssFeeds()
         {
             return await _context.RssFeeds.ToListAsync();
+
         }
 
         // GET: api/DailyReading/5

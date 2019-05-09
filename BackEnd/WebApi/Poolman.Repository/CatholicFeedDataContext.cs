@@ -8,7 +8,6 @@ namespace Poolman.Repository
 {
     public class CatholicFeedDataContext : DbContext
     {
-
         public CatholicFeedDataContext()
         {
         }
