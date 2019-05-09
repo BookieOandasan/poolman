@@ -38,3 +38,11 @@ UserInterfaceState.xcuserstate
 /BackEnd/WebApi/Poolman.Repository.UnitTests/obj/Poolman.Repository.UnitTests.csproj.nuget.cache
 *.cache
 /BackEnd/WebApi/Poolman.DatabaseProject/Poolman.DatabaseProject.jfm
+/BackEnd/WebApi/.vs/PoolmanWebapi/v16/Server/sqlite3/storage.ide-shm
+/BackEnd/WebApi/.vs/PoolmanWebapi/v16/Server/sqlite3/storage.ide-wal
+*.user
+/BackEnd/WebApi/Poolman.Repository/obj/Debug/netcoreapp2.2
+/BackEnd/WebApi/Poolman.Repository/obj
+/BackEnd/WebApi/Poolman.Repository.UnitTests/obj
+/BackEnd/WebApi/PoolmanWebapi/obj/Debug/netcoreapp2.2
+/BackEnd/WebApi/PoolmanWebapi/obj
