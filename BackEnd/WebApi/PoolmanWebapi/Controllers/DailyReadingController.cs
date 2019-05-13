@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +10,7 @@ using Poolman.Repository;
 
 namespace PoolmanWebapi.Controllers
 {
+
     [Produces("application/json")]
     [Route("odata/[controller]")]
     [ApiController]
@@ -26,38 +26,35 @@ namespace PoolmanWebapi.Controllers
 
         // GET: api/DailyReading
         [HttpGet]
-        //[EnableCors("AllowOrigin")]
-        public async Task<ActionResult<IEnumerable<RssFeedDto>>> GetRssFeeds()
+        public async Task<ActionResult<IEnumerable<DailyReadingDTO>>> GetDailyReadings()
         {
-            return await _context.RssFeeds.ToListAsync();
-
+            return await _context.DailyReadings.ToListAsync();
         }
 
         // GET: api/DailyReading/5
-        //[HttpGet("{id}")]
-        //[EnableCors("AllowOrigin")]
-        //public async Task<ActionResult<RssFeedDto>> GetRssFeedDto(string id)
-        //{
-        //    var rssFeedDto = await _context.RssFeeds.FindAsync(id);
+        [HttpGet("{id}")]
+        public async Task<ActionResult<DailyReadingDTO>> GetDailyReadingDTO(int id)
+        {
+            var dailyReadingDTO = await _context.DailyReadings.FindAsync(id);
 
-        //    if (rssFeedDto == null)
-        //    {
-        //        return NotFound();
-        //    }
+            if (dailyReadingDTO == null)
+            {
+                return NotFound();
+            }
 
-        //    return rssFeedDto;
-        //}
+            return dailyReadingDTO;
+        }
 
         // PUT: api/DailyReading/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRssFeedDto(string id, RssFeedDto rssFeedDto)
+        public async Task<IActionResult> PutDailyReadingDTO(int id, DailyReadingDTO dailyReadingDTO)
         {
-            if (id != rssFeedDto.Id)
+            if (id != dailyReadingDTO.Id)
             {
                 return BadRequest();
             }
 
-            _context.Entry(rssFeedDto).State = EntityState.Modified;
+            _context.Entry(dailyReadingDTO).State = EntityState.Modified;
 
             try
             {
@@ -65,7 +62,7 @@ namespace PoolmanWebapi.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!RssFeedDtoExists(id))
+                if (!DailyReadingDTOExists(id))
                 {
                     return NotFound();
                 }
@@ -78,44 +75,35 @@ namespace PoolmanWebapi.Controllers
             return NoContent();
         }
 
-        [HttpGet("type")]
-        [Route("odata/[controller]/DailyReadingController{type}")]
-        //http://localhost:44392/odata/DailyReading/dailyReading
-        public IQueryable<RssFeedDto> getRssFeedsCurrentDate([FromODataUri]string type)
-        {
-            //return _context.GetRssFeedByCurrentDate(type).AsQueryable();
-            return _context.RssFeeds.Where(r => r.publishdate == DateTime.Now & r.type==type);
-        }
-
         // POST: api/DailyReading
         [HttpPost]
-        public async Task<ActionResult<RssFeedDto>> PostRssFeedDto(RssFeedDto rssFeedDto)
+        public async Task<ActionResult<DailyReadingDTO>> PostDailyReadingDTO(DailyReadingDTO dailyReadingDTO)
         {
-            _context.RssFeeds.Add(rssFeedDto);
+            _context.DailyReadings.Add(dailyReadingDTO);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetRssFeedDto", new { id = rssFeedDto.Id }, rssFeedDto);
+            return CreatedAtAction("GetDailyReadingDTO", new { id = dailyReadingDTO.Id }, dailyReadingDTO);
         }
 
         // DELETE: api/DailyReading/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<RssFeedDto>> DeleteRssFeedDto(string id)
+        public async Task<ActionResult<DailyReadingDTO>> DeleteDailyReadingDTO(int id)
         {
-            var rssFeedDto = await _context.RssFeeds.FindAsync(id);
-            if (rssFeedDto == null)
+            var dailyReadingDTO = await _context.DailyReadings.FindAsync(id);
+            if (dailyReadingDTO == null)
             {
                 return NotFound();
             }
 
-            _context.RssFeeds.Remove(rssFeedDto);
+            _context.DailyReadings.Remove(dailyReadingDTO);
             await _context.SaveChangesAsync();
 
-            return rssFeedDto;
+            return dailyReadingDTO;
         }
 
-        private bool RssFeedDtoExists(string id)
+        private bool DailyReadingDTOExists(int id)
         {
-            return _context.RssFeeds.Any(e => e.Id == id);
+            return _context.DailyReadings.Any(e => e.Id == id);
         }
     }
 }

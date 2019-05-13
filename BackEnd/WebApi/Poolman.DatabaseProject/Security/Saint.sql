@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [Saint]
+    AUTHORIZATION [dbo];
+

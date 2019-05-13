@@ -27,6 +27,8 @@ namespace Poolman.Repository
 
 
         public virtual DbSet<RssFeedDto> RssFeeds { set; get; }
+        public virtual DbSet<SaintDTO> Saints { get; set; }
+        public virtual DbSet<DailyReadingDTO> DailyReadings { set; get; }
 
 
         public List<RssFeedDto> GetRssFeedByCurrentDate(string rssType)

@@ -87,5 +87,13 @@
     <Build Include="Security\CatholicDataFeedOnDemand.sql" />
     <Build Include="Security\CatholicFatihFeed.sql" />
     <Build Include="Security\CatholicFeed.sql" />
+    <Build Include="Security\Saint.sql" />
+    <Build Include="Security\Reading.sql" />
+    <Build Include="CatholicDataFeedOnDemand\Tables\SaintOfTheDay.sql" />
+    <Build Include="CatholicDataFeedOnDemand\Tables\DailyReading.sql" />
+    <Build Include="CatholicDataFeedOnDemand\Tables\DailyReadingSection.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Poolman.DatabaseProject.refactorlog" />
   </ItemGroup>
 </Project>
