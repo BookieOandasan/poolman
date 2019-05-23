@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OData;
 using Microsoft.OData.Edm;
 using Poolman.Repository;
 
@@ -30,7 +29,7 @@ namespace PoolmanWebapi
             //    .AddAzureADB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
             services.AddOData();
 
-            
+
             services.AddCors(o => o.AddPolicy("AllowOrigin", builder =>
             {
                 builder.AllowAnyOrigin()
@@ -47,6 +46,7 @@ namespace PoolmanWebapi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
             app.UseCors(options => options
                                .AllowAnyHeader()
                                .AllowAnyMethod()
@@ -68,25 +68,41 @@ namespace PoolmanWebapi
             app.UseAuthentication();
             app.UseMvc(b =>
             {
-                b.MapRoute("default", "api/{controller}/{action}");
-                b.MapRoute("defaultApi", "api/{controller}/{id}");
-                b.Count().Filter().OrderBy().Expand().Select().MaxTop(null);
-                b.MapODataServiceRoute("odata", null, GetEdmModel());
+                b.MapODataServiceRoute("odata", "odata", GetEdmModel(app.ApplicationServices));
+                b.EnableDependencyInjection();
+                b.Select()
+                .Expand()
+                .Filter()
+                .OrderBy(QueryOptionSetting.Allowed)
+                .MaxTop(2000)
+                .Count();
+
             });
         }
 
-        private IEdmModel GetEdmModel()
+        private IEdmModel GetEdmModel(IServiceProvider serviceProvider)
         {
-            var builder = new ODataConventionModelBuilder();
+            var builder = new ODataConventionModelBuilder(serviceProvider);
             builder.EnableLowerCamelCase();
 
-            builder.EntitySet<RssFeedDto>("DailyReading").EntityType.Filter(QueryOptionSetting.Allowed);
-            builder.EntityType<RssFeedDto>().Filter("type");
+            builder.EntitySet<DailyReadingDTO>("DailyReading")
+                .EntityType
+                .Filter(QueryOptionSetting.Allowed)
+                .Count()
+                .OrderBy()
+                .Page()
+                .Select();
+            builder.EntityType<DailyReadingDTO>().Filter("type");
 
-            //builder.EntitySet<RssFeedDto>("DailyReading").EntityType.Filter(QueryOptionSetting.Allowed);
-            //var searchFunction = builder.Function("getRssFeedsCurrentDate");
-            //searchFunction.Parameter<string>("searchText");
-            //searchFunction.ReturnsCollectionFromEntitySet<RssFeedDto>("RssFeedsCurrentDate");
+            builder.EntitySet<SaintDTO>("Saint")
+                .EntityType
+                .Filter(QueryOptionSetting.Allowed)
+                .Count()
+                .OrderBy()
+                .Page()
+                .Select();
+            builder.EntityType<SaintDTO>().Filter("id");
+
 
             return builder.GetEdmModel();
         }

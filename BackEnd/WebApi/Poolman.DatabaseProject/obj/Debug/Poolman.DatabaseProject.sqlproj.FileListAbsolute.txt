@@ -1,6 +1,6 @@
 E:\dev\poolman\poolman\BackEnd\WebApi\Poolman.DatabaseProject\bin\Debug\Poolman.DatabaseProject.dacpac
 E:\dev\poolman\poolman\BackEnd\WebApi\Poolman.DatabaseProject\bin\Debug\Poolman.DatabaseProject.dll
 E:\dev\poolman\poolman\BackEnd\WebApi\Poolman.DatabaseProject\bin\Debug\Poolman.DatabaseProject.pdb
-E:\dev\poolman\poolman\BackEnd\WebApi\Poolman.DatabaseProject\obj\Debug\Poolman.DatabaseProject.sqlprojAssemblyReference.cache
 E:\dev\poolman\poolman\BackEnd\WebApi\Poolman.DatabaseProject\obj\Debug\Poolman.DatabaseProject.dll
 E:\dev\poolman\poolman\BackEnd\WebApi\Poolman.DatabaseProject\obj\Debug\Poolman.DatabaseProject.pdb
+E:\dev\poolman\poolman\BackEnd\WebApi\Poolman.DatabaseProject\obj\Debug\Poolman.DatabaseProject.sqlprojAssemblyReference.cache

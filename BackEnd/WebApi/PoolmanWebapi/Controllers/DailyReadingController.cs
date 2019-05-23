@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,10 +13,11 @@ namespace PoolmanWebapi.Controllers
 {
 
     [Produces("application/json")]
-    [Route("odata/[controller]")]
+    [Route("odata/DailyReading")]
     [ApiController]
     [EnableCors("AllowOrigin")]
-    public class DailyReadingController : ControllerBase
+   
+    public class DailyReadingController : ODataController
     {
         private readonly CatholicFeedDataContext _context;
 
@@ -26,13 +28,22 @@ namespace PoolmanWebapi.Controllers
 
         // GET: api/DailyReading
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<DailyReadingDTO>>> GetDailyReadings()
+        [EnableQuery]
+        public IQueryable<DailyReadingDTO> GetDailyReadings()
         {
-            return await _context.DailyReadings.ToListAsync();
+            return  _context.DailyReadings.AsQueryable();
         }
+
+        //[HttpGet]
+        //[EnableQuery]
+        //public async Task<ActionResult<IEnumerable<DailyReadingDTO>>> GetDailyReadings([FromODataUri] DateTime publishDate)
+        //{
+        //    return await _context.DailyReadings.Where(r=>r.publishdate == publishDate).ToListAsync();
+        //}
 
         // GET: api/DailyReading/5
         [HttpGet("{id}")]
+        [EnableQuery]
         public async Task<ActionResult<DailyReadingDTO>> GetDailyReadingDTO(int id)
         {
             var dailyReadingDTO = await _context.DailyReadings.FindAsync(id);

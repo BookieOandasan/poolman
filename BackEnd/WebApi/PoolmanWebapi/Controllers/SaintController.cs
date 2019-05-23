@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +14,11 @@ namespace PoolmanWebapi.Controllers
     //[Route("api/[controller]")]
     //[ApiController]
     [Produces("application/json")]
-    [Route("odata/[controller]")]
+    [Route("odata/Saint")]
     [ApiController]
     [EnableCors("AllowOrigin")]
-    public class SaintController : ControllerBase
+    [EnableQuery]
+    public class SaintController : ODataController
     {
         private readonly CatholicFeedDataContext _context;
 
